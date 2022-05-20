@@ -1,0 +1,13 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: my-fun
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: my-fun
+spec:
+  source:
+    git:
+      url: https://github.com/trisberg/my-fun
+      ref:
+        branch: main
